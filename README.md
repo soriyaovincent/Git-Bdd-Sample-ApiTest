@@ -1,9 +1,11 @@
 # Git-Bdd-Sample-ApiTest
 
+
 Features:
 
-BDD Framework
+BDD Framework using speclow
 System.Net.Http interface
+NUnit
 
 Sample Tests
 How to use:
