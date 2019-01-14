@@ -3,12 +3,13 @@
 
 Features:
 
-BDD Framework using speclow, 
-System.Net.Http interface, 
-NUnit
+- BDD Framework using specflow
+- System.Net.Http interface, 
+- NUnit
+-Sample Tests
 
-Sample Tests
-How to use:
+
+- How to use:
 
 - Clone the project from GitHub
 - Open Visual Studio
