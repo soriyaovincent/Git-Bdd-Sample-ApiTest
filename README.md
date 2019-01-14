@@ -9,7 +9,7 @@ Features:
 -Sample Tests
 
 
-- How to use:
+How to use:
 
 - Clone the project from GitHub
 - Open Visual Studio
