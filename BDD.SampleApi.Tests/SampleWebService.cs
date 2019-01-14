@@ -1,14 +1,12 @@
 ﻿using System;
+using System.Net;
+using System.Net.Http;
+using System.Net.Http.Headers;
+using System.Threading.Tasks;
 
 namespace BDD.SampleApi.Tests
 {
-    using System.Net;
-    using System.Net.Http;
-    using System.Net.Http;
-    using System.Net.Http.Headers;
-    using System.Threading.Tasks;
-
-    public class AssuritySampleWebService
+    public class SampleWebService
     {
         public async Task<string> GetCatalouge(string categoryParam)
         {
@@ -18,9 +16,7 @@ namespace BDD.SampleApi.Tests
             client.BaseAddress = new Uri("https://api.tmsandbox.co.nz/v1/Categories/6327/Details.json");
             client.DefaultRequestHeaders.Accept.Clear();
             client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-
-            //string requestParam = "catalogue=false";
-
+            
             try
             {
                 HttpResponseMessage httpResponseMsg = client.GetAsync(categoryParam).Result;
@@ -34,7 +30,6 @@ namespace BDD.SampleApi.Tests
             catch (Exception e)
             {
                 Console.WriteLine(e.ToString());
-                //Console.ReadLine();
                 throw new ApplicationException("Failed to get response" + e.Message);
             }
 

@@ -99,7 +99,7 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="AssuritySampleWebService.cs" />
+    <Compile Include="SampleWebService.cs" />
     <Compile Include="Feature\GetCatalogueTest.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
